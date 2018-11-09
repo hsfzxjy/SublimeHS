@@ -1,0 +1,4 @@
+{
+    "cmd": ["ghc", "$file"],
+    "selector": "source.haskell"
+}

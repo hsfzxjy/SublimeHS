@@ -1,5 +1,6 @@
 {
     "target": "haskell_build",
-    "cmd": ["ghc", "$file"],
-    "selector": "source.haskell"
+    "shell_cmd": "ghc \"$file\" -o ${file_base_name} && ./${file_base_name}",
+    "selector": "source.haskell",
+    "working_dir": "${file_path}"
 }
